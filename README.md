@@ -1,7 +1,17 @@
 # mavenversionsdemo
 
-for version change:
-mvn versions:set -DnewVersion=_&lt;target version&gt;_
+This project contains a three level dependency:
+
+- root
+  - parent
+    - project 1
+    - project 2
+    
+all projects are built in dependency order.
+
+## Commands
+
+**for version change:** mvn versions:set -DnewVersion=_&lt;target version&gt;_
 
 examples:
 
